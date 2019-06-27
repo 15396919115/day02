@@ -9,3 +9,15 @@ div{
 #t1{
     color: red;
 }
+h1#h2{
+
+}
+.header>ul>li:nth-child(2){
+
+}
+.header>ul>li:hover(2){
+
+}
+ul::after{
+    content: "hello"
+}

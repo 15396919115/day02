@@ -1,4 +1,44 @@
+css:选择器{
+    1、核心选择器
+    元素选择器 p、h1、h2
+    类选择器   . classname
+    id选择器   #idname
+    #t1{
 
+    }选中id为t1的元素
+
+    和选择器   p  h1{
+
+    }
+
+    并且选择器  h1 #t1 {
+
+    }选中h1标签，并且h1标签的id为t1
+
+    2、层次选择器
+    后代选择器
+    .header空格
+    .header ul{
+
+    }选中class为header 的元素的所有后代ul的元素
+        选择器1 选择器2
+    子代选择器
+     .header>ul{
+
+     }
+    选择器1>选择器2
+    3、补充
+    子元素过滤器
+    .header>ul>li:nth-child(2){
+
+    }找到class为
+3、css声明
+mdn
+1）、字体相关
+color：red；          字体颜色
+font-weight：bold；   字体加粗
+font
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +47,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>外部链接</title>
     <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+<style>
+div{text-align: center;
+    background-color: pink;
+    color: #ffffff </style>
+    <body>
     <div>hello</div>
     <div>world</div>
-    <h1>title1</h1>
+    <h1 id="t1">title1</h1>
 
 </body>
 </html>
